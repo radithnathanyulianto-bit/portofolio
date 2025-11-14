@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Radith</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("XTgQmepmG0VWCdllWs"); 
+    })();
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <section class="container">
+    <h2>Kirim Pesan</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Nama" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Pesan (maks. 200 kata)" maxlength="200" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
